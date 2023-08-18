@@ -12,8 +12,8 @@
 <h1>ChangeLog do Aprendizado.</h1>
     <ul>
         <li>16-08-2023 - Realizado</li>
-        <ol>Aprendizado referente a atalhos e melhorias de icones e plugins no VSCODE.</ol>
-        <ol>Realizado o <a href="https://digitalinnovationone.github.io/roadmaps/" target="_blank" rel="ROADMAP DIO">ROADMAP</a> da DIO para entender melhor minha aptidão a tecnologia.</ol>
-        <ol>Primeiros passos básicos com o <a href="http://www.notion.so/" target="_blank" rel="Notion">NOTION</a>, ferramenta utilizada como controle/acompanhamento de projetos/afazeres, estudos e até mesmo metas pessoas.</ol>
+        <ol>- Aprendizado referente a atalhos e melhorias de icones e plugins no VSCODE.</ol>
+        <ol>- Realizado o <a href="https://digitalinnovationone.github.io/roadmaps/" target="_blank" rel="ROADMAP DIO">ROADMAP</a> da DIO para entender melhor minha aptidão a tecnologia.</ol>
+        <ol>- Primeiros passos básicos com o <a href="http://www.notion.so/" target="_blank" rel="Notion">NOTION</a>, ferramenta utilizada como controle/acompanhamento de projetos/afazeres, estudos e até mesmo metas pessoas.</ol>
     </ul>
 </div>

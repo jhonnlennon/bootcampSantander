@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como funciona a autenticação via TOKEN?</title>
+</head>
+<body>
+    <h1>Autenticação via TOKEN.</h1>
+    <p>Anteriormente a autenticação do GITHUB era realizada através de login e senha. Atualmente (desde 2021) não é mais permitido.</p>
+    <p>Os token são exclusivos e também irrevogáveis. Com limitação (permissões) aos quais podemos definir. E evitável quanto ao uso de Brute Force.</p>
+    <br>
+    <p>Para criar um respositório novo basta acessar o site do GitHUB, clicando em mais, selecione a opção "Create a new repository". É importante adicionar um nome,caso queira, uma descrição, selecionar se é Público ou Privado, e inicializar o respositório com o README.</p>
+    <br>
+    <p>Para criar um Token devemos acessar o canto superior direito, clicar em settings, ir até o final o final da página e clicar em "Developer Settings".
+        <br>
+        Selecionar a opção "Personal acessess tokens", e depois "Tokens (Classic)".
+        <br>
+        Em seguida selecionar "Generate new token" e sem seguida, "Generate new token (Classic)".
+    </p>
+    <p>Ao se criar um token, devemos selecionar o seu período e colocar uma anotação para o que é esse token. Depois devemos selecionar suas permissões.</p>
+    <p><strong style="color: red;">Atenção!</strong> guarde esse token pois será apresentado somente uma única vez no site GitHUB no caso.</p>
+
+    <h2>Como salvar o TOKEN?</h2>
+    <p>Primeiro devemos usar o comando: "git config credential.helper store/cache" (Store é para deixar armazenado permanentemente e o cache fica temporariamente.)</p>
+</body>
+</html>

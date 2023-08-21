@@ -25,5 +25,9 @@
         <ol>- Iniciado apredizado com GIT e GITHUB.</ol>
         <ol>- Concluído os módulos de instalação, configuração e autenticação via Token.</ol>
         <ol>- Visualizado quanto ao uso de credenciais e locais de armazenamento dos arquivos de configuração.</ol>
+        <li>20-08-2023</li>
+        <ol>Revisão das aulas e comando de configuração do GITHUB</ol>
+        <ol>Revisão e anotações quanto a utilização dos chaves de acesso (TOKEN and SSH)</ol>
+    
     </ul>
 </div>

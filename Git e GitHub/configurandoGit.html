@@ -33,6 +33,39 @@
 
         <li>git config --global --list</li>
         <ol>Vai retornar todas as configurações feitas no global.</ol>
+        <br>
+
+        <li>git config credential.helper store/cache</li>
+        <ol>Usado para armazenar um TOKEN. (Store é para deixar armazenado permanentemente e o cache fica temporariamente). Para visualizar o que foi armazenado, utilize: git config --global credential.helper</ol>
+        <br>
+
+        <li>git config --global --show-origin credential.helper</li>
+        <ol>O "git config" vai chamar a configuração;</ol>
+        <ol>O "--global" indica que vai ficar armazenado para TODOS;</ol>
+        <ol>O "--show-origin" mostra o caminho de onde esta armazenado; </ol>
+        <ol>O "credential.helper" variável de configuração.<ol>
+        <br>
+
+        <li>cat .gitconfig</li>
+        <ol>O "cat" vai mostrar o conteúdo do arquivo;</ol>
+        <ol>O ".gitconfig" é o nome do arquivo, poderia ser qualquer outro..</ol>
+        <br>
+
+        <li style="color: red;">cat .git-credential</li>
+        <ol>O "cat" vai mostrar o conteúdo do arquivo;</ol>
+        <ol>O ".git-credential" é o nome do arquivo, neste exemplo ele vai mostrar o <strong>token de acesso</strong> do gitHUB..</ol>
+        <br>
+
+        <li>ls -al ~/.ssh</li>
+        <ol>O "ls" vai listar o que esta na pasta;</ol>
+        <ol>O "-al" indica listar TODOS os arquivos incluindo pastas OCULTAS. Que são as pastar com o "ponto" na frente.</ol>
+        <ol>O "~/" diretório home do usuário. Onde ficam todos os arquivos. </ol>
+        <ol>O ".ssh" é o diretório.<ol>
+        <br>
+
+
+
+        <p>Caso não tenha o comando aqui, <a href="comandosGit.html" target="_blank" rel="comandos git">veja aqui.</a></p>
     </ul>
 
 

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como adicionar arquivos no repositórios?</title>
+</head>
+<body>
+    <h1>Como adicionar arquivos no repositórios?</h1>
+<p>Resumo: <br>
+    <ul>
+        <li>Criamos um diretório no guiBash com o <strong>MKDIR.</strong></li><br>
+        <li>Iniciamos um projeto GIT com o <strong>git init.</strong></li><br>
+        <li>Criamos um repositório no gitHub.</li><br>
+        <li>Por ser privado este exemplo, adicionamos um <strong>token</strong> ou uma <strong>chave ssh</strong>. <br>
+        **Atenção ao processo.</li><br>
+        <li>Configuramos nosso projeto git no repositório do github com o comando: <strong>"git remote add origin [link do repositório gitHUB].</strong></li><br>
+        <li>Geramos nossos arquivos e agora vamos realizar o "upload" dos mesmos. Usamos o comando: <strong>git add {nome do arquivo com sua extensão}</strong>
+        <br>
+    *Neste momento o seu arquivo esta na zona de preparo para o proximo passo que é o commit.
+    <br>
+    **Um atalho para adicionar todos os arquivos é usar o "ponto" no lugar do nome do arquivo.
+    </li><br>
+    <li>Com o comando: <strong>git commit -m"sua mensagem aqui"</strong> </li>
+    </ul>
+</p>
+<p><strong style="color: red;">Atenção!</strong>Caso você veja um arquivo dentro de uma pasta vazia em algum respositório chamado <strong>.gitkeep</strong> é somente para que o git reconheça esse diretório e também
+faça o upload dele. Obviamente, o git não reconhece pastas vazias.</p>
+</body>
+</html>

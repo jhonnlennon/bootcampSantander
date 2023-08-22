@@ -8,14 +8,60 @@
 <body>
 <h1>Como é feita a autenticação via SSH?</h1>
 <p>É um protocolo onde o computador local e o servidor, através de uma conexão criptografada se conectam.</p>   
-<p>Para acessar devemos navegar até a opção Settings (canto superior direito)... <br>
-Em seguida selecionar "SSH and GPG Keys"..</p> 
 
 <br>
 <h2>Analisando a documentação</h2>
 <p>Inicialmente para saber e acessar uma chave ssh devemos usar o seguinte comando: ls -al ~/.ssh <a href="comandosGit.html">veja mais sobre o comando aqui.</a>. <br><br>
     Caso retorne "cannot access... No such file or dir...." Justamente porque não tem nenhum item.
 </p>
-<p>Para estarmos gerando uma nova chave SSH </p>
+
+<h2>Gerando uma chave SSH</h2>
+
+<p>Para estarmos gerando uma nova chave SSH devemos seguir os seguintes comandos: <a href="comandosGit.html" target="_blank" rel="comandos git">Clique aqui.</a><br>
+    Em seguida, ele vai pedir para indicar onde vai salvar a chave. Deixe sempre padrão. (se possível.) <br>
+    Logo após, digite uma frase secreta, como senha.</p>
+
+<h2>Guardando a chave privada</h2>
+
+    <p>Lembrando que geramos uma chave pública e uma privada. Após gerar a chave SSH, devemos adicionar a chave privada ao ssh-agente (fica no computador local), para que seja corretamente armazenada. Vamos executar o ssh-agente.. Veja abaixo.</p>
+
+    <p><a href="comandosGit.html">Clique aqui</a> para visualizar o comando para executar o SSH-AGENT. Em seguida devemos adicionar nossa chave privada. Veja como: <br>
+    Deve digitar o seguinte comando: <br>
+    ssh-add ~/.ssh/id_ed25519 <br>
+    Em seguida, digite sua frase secreta. 
+    </p>
+    <p>Adicionado a chave privada no ssh-agent, devemos adicionar a chave pública no GitHUB. Veja abaixo.</p>
+
+    <h2>Guardando a chave pública</h2>
+    <p>Como dito anteriormente, devemos agora adicionar nossa chave pública no GitHUB. <br>
+    A ideia é simples, a chave privada(computador local) vai se comunicar com a pública (GitHUB)  <br> 
+Por isso, cada uma deve estar em seu devido local.
+    <br>
+    </p>
+    <p>Para acessar SSH key no GitHUB, devemos navegar até a opção Settings (canto superior direito)... <br>
+    Em seguida selecionar "SSH and GPG Keys"..</p> 
+    <p>Devemos adicionar um título, para que possamos saber de onde é esta chave.
+        <br><br>
+        Também selecionar a chave de "Authentication Key". <br> 
+        **A opção "Signing Key" é para adicionar assinatura (validação) aos seus commit.
+        <br><br>
+        Para acessar nossa chave, devemos acessar o local "home" onde estão nossas chaves, o comando é:
+        cd ~/.shh
+        <ul>
+            <li>"cd" siginifica change direct, trocar de diretório.</li>
+            <li>"~/" diretório (endereço)</li>
+            <li>".shh" pasta oculta onde ficam as chaves.</li>
+        </ul>
+        <br><br>
+        Utilize a chave com final .pub, depois de usar um LS para listar o conteúdo da pasta.
+        <br>
+        **Para visualizar, usar o comando cat nomedachave.pub
+
+        <br><br>
+        Atenção, para clonar usando o ssh, usar no GitBASH, já dentro do diretório onde quer fazer o clone e usar, git clone e o link do ssh. Lembrar de colocar a palavra secreta.
+    </p>
+
+
+
 </body>
 </html>

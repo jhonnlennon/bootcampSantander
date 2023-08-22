@@ -9,20 +9,81 @@
     <h1>Listagem de comandos e suas funções.</h1>
     <ul>
         <li>git clone</li>
-        <ol>Utilizado para clonar o respositório.</ol>
-        <ol>*Necessário criar um token.</ol>
+        <ol>Utilizado para clonar o repositório.</ol>
+        <ol>*Necessário criar um token ou ssh.</ol>
+        <ol>Para renomear a pasta quando clonado, basta ao final do link adicionar o nome da pasta que quiser.</ol>
         <br>
+
         <li>git commit</li>
         <ol>Grava alterações no reposiório.</ol>
         <br>
+
         <li>git pull</li>
-        <ol>Utilizado para atualizar o seu repositório local, uma vez que tiver outros colaboradores trabalhando em cima do respositório. <br>
+        <ol>Utilizado para atualizar o seu repositório local, uma vez que tiver outros colaboradores trabalhando em cima do repositório. <br>
             Em tese, ele busca e mescla com o seu para que vc possa atualizar.
         </ol>
         <br>
+
         <li>git push</li>
-        <ol>Utilizado para enviar (empurrar) suas alterações para o respositório remoto.</ol>
+        <ol>Utilizado para enviar (empurrar) suas alterações para o repositório remoto.</ol>
         <br>
+
+        <li>git init</li>
+        <ol>Transforma a pasta onde esta em um repositório git.</ol>
+        <br>
+
+        <li>git status</li>
+        <ol>Usado para mostrar nossa arvore de trabalho e também nossa área de preparação.</ol>
+        <ol>**Arquivos untracked files são arquivos não rastreados, ou seja, aqueles arquivos que o git não conhece.</ol>
+        <br>
+
+        <li>git log</li>
+        <ol>Mostra o log dos commits.</ol>
+        <br>
+
+        <li>git restore</li>
+        <ol>Utilizado para restaurar um arquivo que fora acidentalmente alterado.</ol>
+        <br>
+
+        <li>git commit --amend -m"sua nova mensagem"</li>
+        <ol>Utilizado para alterar a mensagem do seu último commit.</ol>
+        <br>
+
+        <li>git remote add origin [link do repositório gitHUB]</li>
+        <ol>Este comando adiciona o repositório local em remoto a partir de um repositório gerado no GitHUB.</ol>
+
+        <li>$ ssh-keygen -t ed25519 -C "seueemail@com.br"</li>
+        <ol>O "$" siginifica que é um novo comando no terminal.</ol>
+        <ol>O "-ssh-keygen" responsável por estar gerando nossas chaves.</ol>
+        <ol>O "-t" indica o tipo de algoritimo. </ol>
+        <ol>O "-C" adiciona um comentário, neste caso, o proprietário desta chave.<ol>
+        <br>
+
+        <li>eval "$(ssh-agent -s)"</li>
+        <ol>Utilizado para executar o ssh-agent.</ol>
+        <br>
+
+        <li>ssh-add ~/.ssh/id_ed25519</li>
+        <ol>Comando para adicionar uma chave privada ao ssh-agent.</ol>
+        <br>
+        
+        <li>mkdir</li>
+        <ol>Cria um diretório.</ol>
+        <br>
+
+        <li>touch {nome do arquivo}</li>
+        <ol>Usando para criar um arquivo vazio.</ol>
+        <br>
+
+        <li>windows + .</li>
+        <ol>open a menu for choise icons or emoji for titles in files .md (markdown)</ol>
+        <br>
+
+        <li>rm -rf {nome do diretório/arquivo}</li>
+        <ol>vai remover a força todos os arquivos ou diretórios o qual foi selecionado.</ol>
+        <br>
+
+        
     </ul>
 
     <p>Caso não tenha o comando aqui, <a href="configurandoGit.html" target="_blank" rel="noopener noreferrer"></a></p>

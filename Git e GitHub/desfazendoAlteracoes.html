@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como desfazer algumas alterações.</title>
+</head>
+<body>
+    <h1>Como desfazer algumas alterações.</h1>
+    <p>Caso 1:</p>
+    <ul>
+        <li>- Foi realizado um git ini em uma pasta errada.</li>
+        <ol>Utilize o comando <strong>rm -rf .git</strong>, vai remover a força todo o seu conteúdo.</ol>
+        <br>
+    </ul>
+    <p>Caso 2:</p>
+    <ul>
+        <li>Foi alterado ou removido algum arquivo ou conteúdo.</li>
+        <ol>Utilize o comando <strong>git restore {nomedoarquivo}</strong></ol>
+    </ul>
+    <p>Caso 3:</p>
+    <ul>
+        <li>Quero modificar a mensagem do commit.</li>
+        <ol>Utilize o comando <strong>git commit --amend -m"sua nova mensagem"</strong></ol>
+    </ul>
+</body>
+</html>

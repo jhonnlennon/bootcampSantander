@@ -28,6 +28,7 @@
         <li>20-08-2023</li>
         <ol>Revisão das aulas e comando de configuração do GITHUB</ol>
         <ol>Revisão e anotações quanto a utilização dos chaves de acesso (TOKEN and SSH)</ol>
-    
+        <li>21-08-2023</li>
+        <ol>Concluído revisão quanto a aula de alterações no repositório local</ol>
     </ul>
 </div>

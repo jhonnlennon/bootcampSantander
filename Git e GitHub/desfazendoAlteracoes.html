@@ -23,5 +23,36 @@
         <li>Quero modificar a mensagem do commit.</li>
         <ol>Utilize o comando <strong>git commit --amend -m"sua nova mensagem"</strong></ol>
     </ul>
+    <p>Caso 4:</p>
+    <ul>
+        <li>Modificando o repositório para a versão específica:</li>
+        <br>
+        <ol><strong>- Comando: git reset --sotf</strong></ol>
+        <br>
+        <ol>Primeiro digite o comando: <strong>git log</strong> para verificar o log dos commits.</ol>
+        <ol>Em seguida, digite o comando: <strong>git reset --soft {numero do commit}</strong></ol>
+        <ol><p>Atenção! Este comando pega todos os arquivos/alterações realizados DEPOIS do commit o qual escolheu e deixa-os na área de preparação para posterior outro commit. </p></ol>
+
+        <br>
+        <ol><strong>- Comando: git reset --mixed</strong></ol>
+        <br>
+        <ol>Primeiro digite o comando: <strong>git log</strong> para verificar o log dos commits.</ol>
+        <ol>Em seguida, digite o comando: <strong>git reset --mixed {numero do commit}</strong></ol>
+        <ol><p>Atenção! Este comando pega todos os arquivos/alterações realizados DEPOIS do commit o qual escolheu e deixa-os como untracked files.. </p></ol>
+    
+        <br>
+        <ol><strong>- Comando: git reset --hard</strong></ol>
+        <br>
+        <ol>Primeiro digite o comando: <strong>git log</strong> para verificar o log dos commits.</ol>
+        <ol>Em seguida, digite o comando: <strong>git reset --hard {numero do commit}</strong></ol>
+        <ol><p>Atenção! Este comando pega todos os arquivos/alterações realizados DEPOIS do commit o qual escolheu e os ignora e os apaga.. </p></ol>
+    </ul>
+
+        <p>Caso 5:</p>
+        <ul>
+            <li>Quero retirar um arquido da minha área de preparação.</li>
+            <ol>Utilize o comando <strong>git reset {nome do local do arquivo e o nome do arquivo}</strong></ol>
+            <ol>Outro comando: <strong>git restore --staged {nome do arquivo junto do caminho onde esta.}</strong></ol>
+        </ul>
 </body>
 </html>

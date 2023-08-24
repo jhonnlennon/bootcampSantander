@@ -30,5 +30,9 @@
         <ol>Revisão e anotações quanto a utilização dos chaves de acesso (TOKEN and SSH)</ol>
         <li>21-08-2023</li>
         <ol>Concluído revisão quanto a aula de alterações no repositório local</ol>
+        <li>22-08-2023</li>
+        <ol>Iniciado o aprendizado quanto a Branches.</ol>
+        <li>23-08-2023</li>
+        <ol>Exercício de treinamento para Branches.</ol>
     </ul>
 </div>

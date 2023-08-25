@@ -34,5 +34,7 @@
         <ol>Iniciado o aprendizado quanto a Branches.</ol>
         <li>23-08-2023</li>
         <ol>Exercício de treinamento para Branches.</ol>
+        <li>24-08-2023</li>
+        <ol>Concluído o aprendizado de Git e GitHub. Certificado emitido.</ol>
     </ul>
 </div>

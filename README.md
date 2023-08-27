@@ -38,5 +38,7 @@
         <ol>Concluído o aprendizado de Git e GitHub. Certificado emitido.</ol>
         <li>25-08-2023</li>
         <ol>Iniciado aprendizado em HTML e CSS.</ol>
+        <li>26-08-2023</li>
+        <ol>I...</ol>
     </ul>
 </div>

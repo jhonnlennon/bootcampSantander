@@ -1,0 +1,62 @@
+body{
+    text-align: justify;
+    background-color:lightgray ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 900px;
+    margin: auto;
+}
+.photo{
+ border: 2px solid black;
+ border-radius: 50px;   
+}
+a{
+    text-decoration: line-through;
+    color: blueviolet;
+}
+#title, .sub-title, .post_title {
+    color: blue;
+}
+#title{
+    text-transform: uppercase;
+}
+.post_title{
+    font-size: 16px;
+    font-style: italic;
+    margin: 0;
+    margin-bottom: 15px;
+}
+.bloco {
+    height: 230px;
+    width: 45%;
+    /*border-sizing: border-box;*/
+    float: left;
+    margin: 20px;
+ 
+  }
+  .post{
+    background-color: white;
+    padding: 15px;
+    border: 2px solid black;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+  }
+  .post_content{
+    margin: 0;
+    margin: 15px;
+    text-align: center;
+  }
+  .post_image{
+    margin-bottom: 15px;
+    border-radius: 5px;
+    height: 100%;
+  }
+ .contact_list {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 10px;
+
+}
+/* Como estilizar um elemento dentro de outro elemento */
+.contact_list li a {
+   text-decoration: none;
+}

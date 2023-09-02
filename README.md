@@ -44,5 +44,9 @@
         <ol>Concluído o módulo de HTML básico.</ol>
         <li>30-08-2023</li>
         <ol>Concluído o módulo de CSS básico.</ol>
+        <li>31-08-2023</li>
+        <ol>Iniciado estudos em JavaScript.</ol>
+        <li>01-09-2023</li>
+        <ol>Concluído aprendizado quanto a operadores e variáveis.</ol>
     </ul>
 </div>

@@ -48,5 +48,7 @@
         <ol>Iniciado estudos em JavaScript.</ol>
         <li>01-09-2023</li>
         <ol>Concluído aprendizado quanto a operadores e variáveis.</ol>
+        <li>05-09-2023</li>
+        <ol>Iniciado aulas com vetores e objetos.</ol>
     </ul>
 </div>

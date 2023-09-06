@@ -90,4 +90,18 @@ console.log(menorQue);
 
 //maior ou igual a..
 var maiorIgual = 5 >= 2;
-console.log(maiorIgual); 
+console.log(maiorIgual);
+
+//Operadores lógicos
+//&& - "e" - Considera que todos os valores sejam true;
+//|| - "ou" - Considera que qualquer valore seja true;
+//! - "não" - inverte o valor de true para false ou vice-versa;
+
+var e = true && false;
+console.log(e);
+
+var ou = false || false;
+console.log(ou);
+
+var nao = !false;
+console.log(nao + " Operador !");

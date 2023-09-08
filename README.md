@@ -50,5 +50,11 @@
         <ol>Concluído aprendizado quanto a operadores e variáveis.</ol>
         <li>05-09-2023</li>
         <ol>Iniciado aulas com vetores e objetos.</ol>
+        <li>06-09-2023</li>
+        <ol>Concluído aulas com vetores e objetos.</ol>
+        <li>07/09/2023</li>
+        <ol>Concluído aulas sobre estruturas condicionais..</ol>
+        <ol>Concluído aulas sobre funções e suas particulariedades..</ol>
+    
     </ul>
 </div>

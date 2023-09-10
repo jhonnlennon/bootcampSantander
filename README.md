@@ -59,6 +59,7 @@
         <ol>Concluído aulas sobre Sintaxe Básica em JavaScript</ol>
         <ol>Concluído aulas sobre Introdução ao Desenvolvimento Web com JavaScript</ol>
         <ol>Iniciando aulas "Criando Projeto com HTML/CSS para listagem de Pokemon.</ol>
-    
+        <li>09/09/2023</li>
+        <ol>Iniciado projeto de POKEDEX</ol>
     </ul>
 </div>

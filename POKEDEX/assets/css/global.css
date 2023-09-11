@@ -1,3 +1,24 @@
-*{
-    font-family: 'Roboto', sans-serif;
+* {
+    font-family: 'Roboto', sans-serif; /*Definindo que a fonte será Roboto*/
+    box-sizing: border-box; /*Definindo que as bordas serão a soma do conteúdo mais o padding*/
+}
+
+body {
+    background-color: #f6f8fc; /*Definindo a cor do backgroud*/
+}
+
+.content {
+    width: 100vw;
+    height: 100vh;
+    padding: 1rem;
+    background-color: #fff;
+}
+
+@media screen and (min-width: 992px) {
+    .content {
+        max-width: 992px;
+        height: auto;
+        margin: 1rem auto;
+        border-radius: 1rem;
+    }
 }

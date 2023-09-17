@@ -14,11 +14,95 @@ body {
     background-color: #fff;
 }
 
-@media screen and (min-width: 992px) {
-    .content {
-        max-width: 992px;
-        height: auto;
-        margin: 1rem auto;
-        border-radius: 1rem;
+/*Media query é um conjunto de css que será aplicado a determinado tamanho de tela pré definido em suas configurações..*/
+@media screen and (min-width: 992px) { /*Aqui ele esta dizendo: Quando chegar no pixel 992... Faça o seguinte..:*/
+    .content { /*A classe content vai ter agora as seguintes configurações..*/
+        max-width: 992px; /*Sua largura máxima será: 992px*/
+        height: auto; /*Deixando sua altura automática quanto ao tamanho do dispositivo.*/
+        margin: 1rem auto; /*E será centralizado*/
+        border-radius: 1rem; /*Deixando o conteúdo do content com bordas. O fundo branco no caso..*/
     }
+}
+
+.pokemons {
+    display: grid; /*Definimos agora que a organização e posicionamento vai ser em grid (tabela)*/
+
+    grid-template-columns: 1fr; /*Seguinte, aqui a gente define que o TEMPLATE das colunas serão duas colunas (por isso tem 2 vezes o 1fr ali) e também dividido por fração, (que é o 1fr), como se tem duas colunas será dividido com 50% obviamente..*/ 
+    padding: 0; /*Retiramos o espaçamento interno*/
+    margin: 0; /*Retiramos a margem*/
+    list-style: none; /*Por sem uma lista ordenada retiramos o estilo (os números da ordenação)*/
+}
+
+@media screen and (min-width: 380px) { /*Aqui ele esta dizendo: Quando chegar no pixel 992... Faça o seguinte..:*/
+    .pokemons { /*A classe content vai ter agora as seguintes configurações..*/
+        grid-template-columns: 1fr 1fr; /*Seguinte, aqui a gente define que o TEMPLATE das colunas serão duas colunas (por isso tem 2 vezes o 1fr ali) e também dividido por fração, (que é o 1fr), como se tem duas colunas será dividido com 50% obviamente..*/
+    }
+}
+
+@media screen and (min-width: 576px) { /*Aqui ele esta dizendo: Quando chegar no pixel 992... Faça o seguinte..:*/
+    .pokemons { /*A classe content vai ter agora as seguintes configurações..*/
+        grid-template-columns: 1fr 1fr 1fr; /*Seguinte, aqui a gente define que o TEMPLATE das colunas serão duas colunas (por isso tem 2 vezes o 1fr ali) e também dividido por fração, (que é o 1fr), como se tem duas colunas será dividido com 50% obviamente..*/
+    }
+}
+
+@media screen and (min-width: 992px) { /*Aqui ele esta dizendo: Quando chegar no pixel 992... Faça o seguinte..:*/
+    .pokemons { /*A classe content vai ter agora as seguintes configurações..*/
+        grid-template-columns: 1fr 1fr 1fr 1fr; /*Seguinte, aqui a gente define que o TEMPLATE das colunas serão duas colunas (por isso tem 2 vezes o 1fr ali) e também dividido por fração, (que é o 1fr), como se tem duas colunas será dividido com 50% obviamente..*/
+    }
+}
+/*Editando todos os itens dentro da classe pokemon*/
+.pokemon {
+    display: flex; /*O display flex ou é um em cima do outro ou um em baixo do outro */
+    flex-direction: column; /*Definindo então, como dito acima, um em baixo do outro... Se fosse um ao lado do outro seria ROW*/
+    margin: .5rem; /*Margem externa*/
+    padding: 1rem; /*Margem interna*/
+    border-radius: 1rem; /*Vamos colocar bordas arredondadas*/
+    background-color: #49d0b0;
+}
+
+/*Abaixo editando quanto aos itens dentro da classe number.*/
+.pokemon .number{
+    color: #000; /*Colocando cor na letra*/
+    opacity: .3; /*Colocando opacidade no número do pokemon*/
+    text-align: right; /*Alinhando ela para direita*/
+    font-size: .625rem; /*Alterando a font-size (diminuindo) para .625rem*/
+}
+
+/*Abaixo estamos editando todos os itens de dentro da classe .name*/
+.pokemon .name{
+    color: #fff; /*Cor das letras*/
+    margin-bottom: .25rem; /*Adicionando margem em baixo...*/
+}
+
+/*Abaixo editando o posicionamento dos itens dentro da classe detail*/
+.pokemon .detail{
+    display: flex; /*Dizendo que a organização dos itens serão display flex (row or column)*/
+    flex-direction: row; /*Definindo como horizontal*/
+    align-items: center; /*Este item centraliza os itens de acordo com o tipo do flex direction que esta sendo utilizado, aqui neste caso esta pegando do .details que é do tipo row. Ou seja, vai centraliar no sentido horizontal.*/
+    justify-content: space-between; /*Esse cara da um espaço entre os dois itens.*/
+}
+
+/*Abaixo editando os tipos dos pokemons*/
+.pokemon .detail .types{
+    padding: 0; /*Tirando margem interna*/
+    margin: 0; /*tirando margem externa da listagem dos tipos dos pokemons*/
+    list-style: none;
+}
+
+/*Abaixo estamos editando tudo de dentro da classe type*/
+.pokemon .detail .types .type{
+    background-color: #61e1ca; /*Adicionando cor no fundo dos tipos dos pokemons*/
+    color: #fff;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    font-size: .625rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+/*Vamos acessar agora a imagem dentro da lista.. veja..*/
+.pokemon .detail img {
+    max-width: 100%; /*Definindo que ele sempre fique dentro dos componentes*/
+    height: 70px; /*Definindo o tamanho da imagem*/
+    /* align-self: flex-end; Alinhando a imagem para a direita, esta propriedade esta pegando como referência o display flex do ol.pokemons li */
 }

@@ -61,5 +61,11 @@
         <ol>Iniciando aulas "Criando Projeto com HTML/CSS para listagem de Pokemon.</ol>
         <li>09/09/2023</li>
         <ol>Iniciado projeto de POKEDEX</ol>
+        <li>11/09/2023</li>
+        <ol>Iniciado Exercícios de fixação quanto ao projeto POKEDEX</ol>
+        <li>16/09/2023</li>
+        <ol>Concluindo o aprendizado quanto a Media Querys, responsividade, elementos e suas definições em css.</ol>
+        <li>18/09/2023</li>
+        <ol>Iniciado a programação em JS e concluido as estilizações.</ol>
     </ul>
 </div>

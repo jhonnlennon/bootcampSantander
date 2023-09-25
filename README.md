@@ -67,5 +67,7 @@
         <ol>Concluindo o aprendizado quanto a Media Querys, responsividade, elementos e suas definições em css.</ol>
         <li>18/09/2023</li>
         <ol>Iniciado a programação em JS e concluido as estilizações.</ol>
+        <li>24/09/2023</li>
+        <ol>Iniciado aula quanto a promise, assincronismo e function fetch and .then</ol>
     </ul>
 </div>

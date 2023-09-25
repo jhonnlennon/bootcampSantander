@@ -7,23 +7,6 @@
     list-style: none; /*Por sem uma lista ordenada retiramos o estilo (os números da ordenação)*/
 }
 
-@media screen and (min-width: 380px) { /*Aqui ele esta dizendo: Quando chegar no pixel 992... Faça o seguinte..:*/
-    .pokemons { /*A classe content vai ter agora as seguintes configurações..*/
-        grid-template-columns: 1fr 1fr; /*Seguinte, aqui a gente define que o TEMPLATE das colunas serão duas colunas (por isso tem 2 vezes o 1fr ali) e também dividido por fração, (que é o 1fr), como se tem duas colunas será dividido com 50% obviamente..*/
-    }
-}
-
-@media screen and (min-width: 576px) { /*Aqui ele esta dizendo: Quando chegar no pixel 992... Faça o seguinte..:*/
-    .pokemons { /*A classe content vai ter agora as seguintes configurações..*/
-        grid-template-columns: 1fr 1fr 1fr; /*Seguinte, aqui a gente define que o TEMPLATE das colunas serão duas colunas (por isso tem 2 vezes o 1fr ali) e também dividido por fração, (que é o 1fr), como se tem duas colunas será dividido com 50% obviamente..*/
-    }
-}
-
-@media screen and (min-width: 992px) { /*Aqui ele esta dizendo: Quando chegar no pixel 992... Faça o seguinte..:*/
-    .pokemons { /*A classe content vai ter agora as seguintes configurações..*/
-        grid-template-columns: 1fr 1fr 1fr 1fr; /*Seguinte, aqui a gente define que o TEMPLATE das colunas serão duas colunas (por isso tem 2 vezes o 1fr ali) e também dividido por fração, (que é o 1fr), como se tem duas colunas será dividido com 50% obviamente..*/
-    }
-}
 /*Editando todos os itens dentro da classe pokemon*/
 .pokemon {
     display: flex; /*O display flex ou é um em cima do outro ou um em baixo do outro */
@@ -79,4 +62,23 @@
     max-width: 100%; /*Definindo que ele sempre fique dentro dos componentes*/
     height: 70px; /*Definindo o tamanho da imagem*/
     /* align-self: flex-end; Alinhando a imagem para a direita, esta propriedade esta pegando como referência o display flex do ol.pokemons li */
+}
+
+
+@media screen and (min-width: 380px) { /*Aqui ele esta dizendo: Quando chegar no pixel 992... Faça o seguinte..:*/
+    .pokemons { /*A classe content vai ter agora as seguintes configurações..*/
+        grid-template-columns: 1fr 1fr; /*Seguinte, aqui a gente define que o TEMPLATE das colunas serão duas colunas (por isso tem 2 vezes o 1fr ali) e também dividido por fração, (que é o 1fr), como se tem duas colunas será dividido com 50% obviamente..*/
+    }
+}
+
+@media screen and (min-width: 576px) { /*Aqui ele esta dizendo: Quando chegar no pixel 992... Faça o seguinte..:*/
+    .pokemons { /*A classe content vai ter agora as seguintes configurações..*/
+        grid-template-columns: 1fr 1fr 1fr; /*Seguinte, aqui a gente define que o TEMPLATE das colunas serão duas colunas (por isso tem 2 vezes o 1fr ali) e também dividido por fração, (que é o 1fr), como se tem duas colunas será dividido com 50% obviamente..*/
+    }
+}
+
+@media screen and (min-width: 992px) { /*Aqui ele esta dizendo: Quando chegar no pixel 992... Faça o seguinte..:*/
+    .pokemons { /*A classe content vai ter agora as seguintes configurações..*/
+        grid-template-columns: 1fr 1fr 1fr 1fr; /*Seguinte, aqui a gente define que o TEMPLATE das colunas serão duas colunas (por isso tem 2 vezes o 1fr ali) e também dividido por fração, (que é o 1fr), como se tem duas colunas será dividido com 50% obviamente..*/
+    }
 }

@@ -69,5 +69,7 @@
         <ol>Iniciado a programação em JS e concluido as estilizações.</ol>
         <li>24/09/2023</li>
         <ol>Iniciado aula quanto a promise, assincronismo e function fetch and .then</ol>
+        <li>25/09/2023</li>
+        <ol>Término da aula quanto a promise, assincronismo, arrow function, function fetch e suas variantes.</ol>
     </ul>
 </div>

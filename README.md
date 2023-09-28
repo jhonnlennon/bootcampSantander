@@ -71,5 +71,7 @@
         <ol>Iniciado aula quanto a promise, assincronismo e function fetch and .then</ol>
         <li>25/09/2023</li>
         <ol>Término da aula quanto a promise, assincronismo, arrow function, function fetch e suas variantes.</ol>
+        <li>28/09/2023</li>
+        <ol>Término dos desafios em JavaScript na Plataforma.</ol>
     </ul>
 </div>

@@ -4,8 +4,19 @@
 
 const pokeApi = {} //Vamos criar um objeto.
 
+function convertPokeApiDetailToPokemon(pokeDetail){
+    const pokemon = new Pokemon()
+    pokemon.number = pokeDetail.order
+    pokemon.name = pokeDetail.order
+    pokemon.types = pokeDetail.map()
+}
+
 pokeApi.getPokemonDetail = (pokemon) => {
-    return fetch(pokemon.url).then((response) => response.json())
+    return fetch(pokemon.url)
+        .then((response) => response.json())
+        .then((pokemon) => {
+
+        })
 }
 //Acima nos estamos criando um método e neste método ele vai retornar um fetch da url do pokemon...
 //Aproveitando estamos passando ele para um .json

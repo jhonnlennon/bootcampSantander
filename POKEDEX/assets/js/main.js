@@ -1,25 +1,17 @@
-
-const offset = 0 //Criando uma constante, offset é 
-const limit = 10 //Criando uma constante para limitar a quantidade que aparece na página. 
-const url =`https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}` //Link da API.
-
-function convertPokemonTypesToLi(pokemonTypes){
-    return pokemonTypes.map((typeSlot) => `<li class="type">${typeSlot.type.name}</li>`)
-}
-//Acima uma função que esta mapeando os tipos dos pokemons e convertendo em html.
-
-function converterPokemonEmHTML(pokemon){
+function convertPokemonToLi(pokemon){
     return `
-    <li class="pokemon">
-    <span class="number">#${pokemon.order}</span>
+    
+    <li class="pokemon ${pokemon.type}" >
+    <span class="number">#${pokemon.number}</span>
     <span class="name">${pokemon.name}</span>
         <div class="detail">
             <ol class="types">
-                ${convertPokemonTypesToLi(pokemon.types).join(' ')}
+                ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
             </ol>
-            <img src="${pokemon.sprites.other.dream_world.front_default}" alt="${pokemon.name}">
+            <img src="${pokemon.photo}" alt="${pokemon.name}">
         </div>
     </li>
+
     `
 }
 
@@ -32,11 +24,8 @@ pokeApi.getPokemons().then((pokemons = []) => {
 
 //Agora, se funcionar, faça abaixo, senão, faça o .catch((error)). Lembrando que ela retornou um array. 
 
-    pokemonList.innerHTML += pokemons.map(converterPokemonEmHTML).join('')
-//Explicando o código acima
-//Pega a constante pokemonList, que já esta pegando um elemento HTML pelo ID.
-//Transforma em um item html com o innerHTML, e concatena com a lista de pokemons mapeada com o código pokemons.map
-//Em seguida converte ele na lista de pokemons em html com o converterPokemonEmHTML e junta todo mundo em uma lista só com o .join, sem separador.
+    const newHtml = pokemons.map(convertPokemonToLi).join('')
+    pokemonList.innerHTML = newHtml
 })
 .catch((error) => console.error(error))
 //No tratamento acima, estamos dizendo que caso de error, execute uma função de error.
@@ -60,6 +49,5 @@ pokeApi.getPokemons().then((pokemons = []) => {
         // Object
 
    //}
-
 
 

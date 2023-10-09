@@ -6,6 +6,81 @@
     margin: 0; /*Retiramos a margem*/
     list-style: none; /*Por sem uma lista ordenada retiramos o estilo (os números da ordenação)*/
 }
+.pokemons a {
+    text-decoration: none;
+ }
+
+.normal {
+    background-color: #a6a877;
+}
+
+.grass {
+    background-color: #77c850;
+}
+
+.fire {
+    background-color: #ee7f30;
+}
+
+.water {
+    background-color: #678fee;
+}
+
+.electric {
+    background-color: #f7cf2e;
+}
+
+.ice {
+    background-color: #98d5d7;
+}
+
+.ground {
+    background-color: #dfbf69;
+}
+
+.flying {
+    background-color: #a98ff0;
+}
+
+.poison {
+    background-color: #a040a0;
+}
+
+.fighting {
+    background-color: #bf3029;
+}
+
+.psychic {
+    background-color: #f65687;
+}
+
+.dark {
+    background-color: #725847;
+}
+
+.rock {
+    background-color: #b8a137;
+}
+
+.bug {
+    background-color: #a8b720;
+}
+
+.ghost {
+    background-color: #6e5896;
+}
+
+.steel {
+    background-color: #b9b7cf;
+}
+
+.dragon {
+    background-color: #6f38f6;
+}
+
+.fairy {
+    background-color: #f9aec7;
+}
 
 /*Editando todos os itens dentro da classe pokemon*/
 .pokemon {
@@ -14,7 +89,6 @@
     margin: .5rem; /*Margem externa*/
     padding: 1rem; /*Margem interna*/
     border-radius: 1rem; /*Vamos colocar bordas arredondadas*/
-    background-color: #49d0b0;
 }
 
 /*Abaixo editando quanto aos itens dentro da classe number.*/
@@ -27,6 +101,7 @@
 
 /*Abaixo estamos editando todos os itens de dentro da classe .name*/
 .pokemon .name{
+    text-transform: capitalize; /*Colocando as primeiras letras em maiúsculo*/
     color: #fff; /*Cor das letras*/
     margin-bottom: .25rem; /*Adicionando margem em baixo...*/
 }
@@ -48,13 +123,13 @@
 
 /*Abaixo estamos editando tudo de dentro da classe type*/
 .pokemon .detail .types .type{
-    background-color: #61e1ca; /*Adicionando cor no fundo dos tipos dos pokemons*/
     color: #fff;
     padding: .25rem .5rem;
     margin: .25rem 0;
     font-size: .625rem;
     border-radius: 1rem;
     text-align: center;
+    filter: brightness(1.1);
 }
 
 /*Vamos acessar agora a imagem dentro da lista.. veja..*/
@@ -64,6 +139,30 @@
     /* align-self: flex-end; Alinhando a imagem para a direita, esta propriedade esta pegando como referência o display flex do ol.pokemons li */
 }
 
+.pokemon:hover{
+    top:-4px;
+    box-shadow:0 4px 4px #999;
+    transition: all .2s ease-in-out
+}
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+.pagination button {
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    font-size: .625rem;
+    color: #fff;
+    background-color: #6c79db;
+    border: none;
+    border-radius: 1rem;
+}
 
 @media screen and (min-width: 380px) { /*Aqui ele esta dizendo: Quando chegar no pixel 992... Faça o seguinte..:*/
     .pokemons { /*A classe content vai ter agora as seguintes configurações..*/
